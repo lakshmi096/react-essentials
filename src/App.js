@@ -49,8 +49,10 @@ function App() {
   )
   return (
     <div className="App">
-      <Header name="Lakshmi"/>
-      <img src={restaurant} alt="a plate full of yummy dishes" height="200"/>
+      <>
+        <Header name="Lakshmi"/>
+        <img src={restaurant} alt="a plate full of yummy dishes" height="200"/>
+      </>
       <Main description="delicious" dishes={dishesObject} />
       <Footer year={new Date().getFullYear()}/>
     </div>
