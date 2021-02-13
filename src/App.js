@@ -1,4 +1,5 @@
 import './App.css';
+import restaurant from "./assets/restaurant.jpg"
 
 function Header(props) {
   return (
@@ -9,7 +10,6 @@ function Header(props) {
 }
 
 function Main(props) {
-  console.log("props main ", props)
   return (
     <section>
       <p>
@@ -47,10 +47,10 @@ function App() {
       title: dish
     })
   )
-  console.log("dishesObject ",dishesObject)
   return (
     <div className="App">
       <Header name="Lakshmi"/>
+      <img src={restaurant} alt="a plate full of yummy dishes" height="200"/>
       <Main description="delicious" dishes={dishesObject} />
       <Footer year={new Date().getFullYear()}/>
     </div>
